@@ -48,7 +48,7 @@ CREATE DATABASE colegio;
 
 Edita `src/main/resources/application.properties` con tus credenciales:
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/colegio
+spring.datasource.url=jdbc:postgresql://localhost:5432/col
 spring.datasource.username=TU_USUARIO
 spring.datasource.password=TU_CONTRASEÑA
 ```
@@ -57,8 +57,8 @@ spring.datasource.password=TU_CONTRASEÑA
 
 Si prefieres crear las tablas manualmente:
 ```bash
-psql -U postgres -d colegio -f database/schema.sql
-psql -U postgres -d colegio -f database/data.sql
+psql -U postgres -d col -f database/schema.sql
+psql -U postgres -d col -f database/data.sql
 ```
 
 ### 5. Compilar y ejecutar
