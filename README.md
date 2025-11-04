@@ -40,7 +40,7 @@ cd TU_REPOSITORIO
 ### 2. Crear la base de datos
 ```bash
 psql -U postgres
-CREATE DATABASE colegio;
+CREATE DATABASE col;
 \q
 ```
 
