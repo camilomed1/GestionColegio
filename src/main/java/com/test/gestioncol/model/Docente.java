@@ -1,4 +1,4 @@
-package com.test.gestioncol.controller;
+package com.test.gestioncol.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
