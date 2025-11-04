@@ -25,7 +25,8 @@ public class MiUserDetailsService implements UserDetailsService {
 
 
         Usuario usuario = usuarioRepository.findByEmail(username)
-                .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado: " + username));
+                .orElseGet(() -> usuarioRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado: " + username)));
 
         System.out.println("✅ Usuario encontrado: " + usuario.getEmail());
         System.out.println("🔑 Password hash: " + usuario.getPassword());
